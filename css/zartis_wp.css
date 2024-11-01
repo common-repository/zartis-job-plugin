@@ -1,0 +1,604 @@
+/*--------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+
+	Zartis WP Styles
+
+	Unique styles to stop overriding of
+	WordPress system styles
+
+	$hh-yellow:  				rgb(245,196,0);
+	$hh-green:				    #356AFD;
+	$hh-blue: 				    rgb(0,147,196);
+	$hh-black:				    rgb(14,14,14);
+	$hh-orange:					rgb(245,98,0);
+	$hh-red:					rgb(245,0,0);
+	$hh-hot: 					rgb(208,0,121);
+
+----------------------------------------------------
+----------------------------------------------------
+--------------------------------------------------*/
+.zar_body {
+	font: 100% "Roboto", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; /* 14px */
+	line-height: 1.5; /* 21px */
+	color: rgb(94, 94, 106);
+	padding: 0;
+	margin: 0;
+	background: white;
+	font-size: 100%;
+	font-weight: 300;
+}
+
+.zar_body * {
+	box-sizing: border-box;
+}
+
+.zar_body .wrap {
+	position: relative;
+	z-index: 1;
+	min-width: 380px;
+	max-width: 1400px;
+	padding: 20px;
+	background: white;
+}
+
+.zar_body #main {
+	overflow: hidden; /* Clearfix */
+	width: 100%;
+	padding: 2rem;
+	border: 1px solid rgb(233, 233, 238);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: rgb(251, 251, 251);
+}
+
+.zar_body .content {
+	position: relative;
+	width: 100%;
+}
+
+/* Branding
+============================= */
+
+.zar_body .branding {
+	width: 160px;
+}
+
+.zar_body .branding img {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+/* Grids
+============================= */
+.zar_body .c6,
+.zar_body .c7,
+.zar_body .c8,
+.zar_body .c9,
+.zar_body .c16 {
+	margin-left: 1.25%;
+	margin-right: 1.25%;
+
+	display: block;
+}
+
+.zar_body .c6:first-child,
+.zar_body .c7:first-child,
+.zar_body .c8:first-child,
+.zar_body .c9:first-child,
+.zar_body .c16:first-child {
+	margin-left: 0;
+}
+
+.zar_body .c6:last-child,
+.zar_body .c7:last-child,
+.zar_body .c8:last-child,
+.zar_body .c9:last-child,
+.zar_body .c16:last-child {
+	margin-right: 0;
+}
+
+.zar_body .c6 {
+	width: 37.15%;
+}
+
+.zar_body .c7 {
+	width: 41.25%;
+}
+
+.zar_body .c8 {
+	width: 47.5%;
+}
+
+.zar_body .c9 {
+	width: 53.75%;
+}
+
+.zar_body .c16 {
+	width: 97.5%;
+}
+
+@media only screen and (max-width: 900px) {
+	.zar_body .c6,
+	.zar_body .c7,
+	.zar_body .c8,
+	.zar_body .c9,
+	.zar_body .c16 {
+		width: 100%;
+	}
+}
+
+/* Callouts
+============================= */
+
+.zar_body .callout {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 0 0 18px;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #fcfcfc;
+}
+
+.zar_body .callout.code {
+	width: 100%;	
+	background-color: #fcfcfc;
+	display: block;
+}
+
+/* Type
+============================= */
+
+.zar_body p {
+	font-size: 1rem;
+	margin: 0.75em 0 1em 0;
+}
+
+.zar_body a:link,
+.zar_body a:visited {
+	color: #356afd;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease-out;
+	outline: none;
+}
+
+.zar_body a:hover,
+.zar_body a:focus,
+.zar_body a:active {
+	opacity: 0.6;
+	text-decoration: none;
+}
+
+.zar_body p,
+.zar_body a,
+.zar_body h2,
+.zar_body h3 {
+	font-weight: 300;
+}
+
+.zar_body h2 {
+	font-weight: 500;
+	color: rgb(55, 55, 65);
+	font-size: 24px;
+	line-height: 1.2em;
+	margin-bottom: 0.5rem;
+}
+
+.zar_body h3 {
+	font-weight: 500;
+	color: rgb(55, 55, 65);
+	font-size: 18px;
+	line-height: 1.0909em;
+}
+
+.zar_body ul.list {
+	margin: 1.5em 0;
+	padding: 0;
+	font-size: 16px;
+	list-style-type: none;
+}
+
+.zar_body ul.list li {
+	padding-left: 25px;
+	margin-left: 5px;
+	color: rgb(55, 55, 65);
+	margin-bottom: 0.85em;
+	line-height: 1.6;
+	background: url(../images/check_alt_16x16.png) no-repeat 0 3px;
+}
+
+.zar_body strong {
+	font-weight: 500;
+}
+/* Code
+============================= */
+.zar_body code,
+.zar_body pre {
+	font-family: "Andale Mono", "Courier New", Courier, "Lucida Console", monospace;
+	font-size: 12px;	
+	border-radius: 3px;
+	display: block;
+}
+
+.zar_body code {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.75);
+	padding: 5px 0;	
+	background: none;
+}
+
+.zar_body pre {
+	display: block;
+	padding: 8.5px;
+	margin: 0 0 18px;
+	line-height: 18px;
+	font-size: 12px;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+/* Messaging
+============================= */
+
+/* For show hide dialog  */
+.zar_body .dialog {
+	width: 94%;
+	padding: 5px 3%;
+	margin: 10px 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: rgb(1, 160, 198);
+}
+
+.zar_body .dialog h2 {
+	color: rgb(255, 255, 255);
+	margin: inherit;
+}
+
+.zar_body .dialog p {
+	color: rgb(255, 255, 255);
+}
+
+.zar_body .info-banner.dialog a {
+	color: rgb(255, 255, 255);
+}
+
+/* For nav arrow  */
+.zar_info-txt {
+	z-index: 100;
+	position: fixed;
+	background: none repeat scroll 0 0 #111;
+	border-radius: 0.3em 0.3em 0.3em 0.3em;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	padding: 15px;
+	width: 250px;
+	opacity: 0.1;
+	top: 0;
+	left: 0;
+}
+
+.zar_message_arrow {
+	border-color: transparent #111 transparent transparent;
+	border-style: solid;
+	border-width: 10px;
+	height: 0;
+	width: 0;
+	position: absolute;
+	left: -20px;
+	top: 8px;
+}
+
+/* Helpers
+============================= */
+
+.zar_body .cent {
+	text-align: center;
+}
+
+.zar_body img {
+	max-width: 100%;
+	border: 1px solid rgb(225, 225, 225);
+	padding: 2px;
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	border-radius: 0.3em;
+}
+
+.zar_body .hide {
+	display: none;
+}
+
+.zar_body .hint {
+	padding: 5px 0 0;
+	font-size: 0.95em;
+	margin: 0;
+	width: 60%;
+	color: #dc0104;
+}
+
+/* Buttons
+============================= */
+
+.zar_body button {
+	background: none;
+}
+
+.zar_body .btn {
+	color: rgb(55, 55, 65);
+	display: inline-block;
+	width: auto !important;
+	margin: 13px 0 0 0;
+	border: 0;
+	-webkit-background-clip: padding;
+	-moz-background-clip: padding;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 4px;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	position: relative;
+	cursor: pointer;
+	background: #356afd;
+	color: rgb(255, 255, 255) !important;
+	font-size: 1.25rem;
+	text-decoration: none;
+	padding: 0.7rem 1rem;
+}
+
+.zar_body .btn:hover {
+	opacity: 0.6;
+	filter: Alpha(Opacity=60);
+	background-image: none;
+}
+
+.zar_body .btn:hover {
+	color: #fff;
+	background-image: none;
+}
+
+.zar_body .btn:active {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transform: translate(0, 2px);
+	-moz-transform: translate(0, 2px);
+	-o-transform: translate(0, 2px);
+	transform: translate(0, 2px);
+}
+
+/* No icon */
+.zar_body .btn.norm {
+	padding: 5px 13px;
+}
+
+/* Save/Submit */
+.zar_body .btn.save,
+.zar_body .btn.submit {
+	background-image: url(../images/check_12x10.png);
+	background-position: 10px 49% !important;
+	background-repeat: no-repeat !important;
+}
+
+/* Next (For signup) */
+.zar_body .btn.next {
+	padding: 8px 3% 8px 1%;
+}
+
+.zar_body .btn.next {
+	font-size: 1.4em;
+	padding: 0 35px 0 18px;
+	background: url(../images/arrow_right_alt1_24x24.png) no-repeat 100% 50% !important;
+}
+
+/* -------- Forms -------- */
+
+.zar_body fieldset {
+	position: relative;
+	width: 100%;
+	padding: 0;
+}
+
+.zar_body ol {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	background-color: white;
+	padding: 0.5rem;
+	border: 1px solid rgb(235, 235, 235);
+}
+
+.zar_body ol li {
+	position: relative;
+	width: 99%;
+	margin-left: 0;
+}
+
+.zar_body label {
+	width: 100%;
+	font-size: 1.1em;
+	margin-right: 3%;
+	margin-top: 5px;
+}
+
+.zar_body input {
+	color: rgb(131, 131, 145);
+	width: 99%;
+	padding: 8px 5px;
+	margin-top: 6px;
+	font-size: 1.2em;
+	border: 1px solid rgb(205, 205, 206);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-color: rgb(255, 255, 255);
+}
+
+.zar_body .sm input {
+	width: 55%;
+}
+
+.zar_body .token-input {
+	font-size: 14px;
+}
+
+/* -------- Tabs -------- */
+
+/* ---- More Info Tabs for Details Pages. For V1.1  ---- */
+.zar_body .tabs {
+	list-style: none;
+	zoom: 1;
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+.zar_body .tabs:before,
+.zar_body .tabs:after {
+	display: table;
+	content: "";
+	zoom: 1;
+	*display: inline;
+}
+.zar_body .tabs:after {
+	clear: both;
+}
+.zar_body .tabs > li {
+	outline: none;
+	cursor: pointer;
+}
+.zar_body .tabs > li > a {
+	display: block;
+	outline: none;
+}
+.zar_body .tabs {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-bottom: 1px solid #ddd;
+}
+.zar_body .tabs > li {
+	display: inline-block;
+	position: relative;
+	top: 1px;
+	margin-bottom: 0;
+	z-index: 0;
+}
+.zar_body .tabs > li > a {
+	display: inline-block;
+	padding: 0 15px;
+	margin-right: 1rem;
+	line-height: 36px;
+	border: 1px solid transparent;
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+	font-size: 1.1rem;
+	outline: none;
+	cursor: pointer;
+}
+.zar_body .tabs > li > a:hover,
+.zar_body .tabs > li > a:focus {
+	text-decoration: none;
+	background-color: #eee;
+	border-color: #eee #eee #ddd;
+}
+.zar_body .tabs > li.active > a {
+	background: rgb(251, 251, 251);
+	border: 1px solid #ddd;
+	border-bottom-color: transparent;
+}
+.zar_body .tabs .menu-dropdown,
+.zar_body .tabs .dropdown-menu {
+	top: 35px;
+	border-width: 1px;
+	-webkit-border-radius: 0 6px 6px 6px;
+	-moz-border-radius: 0 6px 6px 6px;
+	border-radius: 0 6px 6px 6px;
+}
+.zar_body .tabs a.menu:after,
+.zar_body .tabs .dropdown-toggle:after {
+	border-top-color: #999;
+	margin-top: 15px;
+	margin-left: 5px;
+}
+.zar_body .tabs li.open.menu .menu,
+.zar_body .tabs .open.dropdown .dropdown-toggle {
+	border-color: #999;
+}
+.zar_body .tabs li.open a.menu:after,
+.zar_body .tabs .dropdown.open .dropdown-toggle:after {
+	border-top-color: #555;
+}
+.zar_body .tab-content {
+	clear: both;
+}
+
+.zar_body .tab-content > * {
+	display: none;
+}
+.zar_body .tab-content > .active {
+	display: block;
+}
+
+/* -------- Flexbox styles -------- */
+.zar_body .flex {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.zar_body .flex-col {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.zar_body .flex-1 {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.zar_body .flex-v-center {
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.zar_body .flex-h-center {
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.zar_body .flex-end {
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
+.zar_body .flex-start {
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}

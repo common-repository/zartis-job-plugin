@@ -1,0 +1,36 @@
+
+.hh-list-row {
+	 float: left;
+	 display: block;
+	 border-top: 1px solid #ccc;
+	 padding: 15px 0 15px 0;
+	 width: 100%;
+	 text-align: left;
+}
+
+.hh-list-row:last-of-type {
+ 	border-bottom: 1px solid #ccc;
+}
+
+.hh-list-cat {
+	 display: block;
+	float: left;
+	width: 100%;
+}
+
+.hh-list-title {
+	 float: left;
+	 width: 50%;
+	 font-weight: bold;
+}
+.hh-list-location {
+	 float: left;
+	 width: 30%;
+	 margin-left: 2.5%;
+}
+.hh-list-type {
+	 float: right;
+	 width: 15%;
+	 margin-left: 2.5%;
+	 text-align: right;
+}
